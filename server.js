@@ -11,7 +11,7 @@ app.use(express.static('public'));
 let gameState = {
     drawnNumbers: [],
     currentNumber: null,
-    timeLeft: 5,
+    timeLeft: 3,
     isGameActive: false
 };
 
@@ -34,13 +34,13 @@ function startGame() {
     
     gameState.isGameActive = true;
     gameState.drawnNumbers = [];
-    gameState.timeLeft = 5;
+    gameState.timeLeft = 3;
     
     drawNumber();
     
     gameInterval = setInterval(() => {
         drawNumber();
-    }, 5000);
+    }, 3000);
 }
 
 function drawNumber() {
@@ -61,7 +61,7 @@ function drawNumber() {
     
     gameState.drawnNumbers.push(drawnNumber);
     gameState.currentNumber = drawnNumber;
-    gameState.timeLeft = 5;
+    gameState.timeLeft = 3;
     
     io.emit('numberDrawn', gameState);
     startCountdown();
@@ -95,7 +95,7 @@ function resetGame() {
     gameState = {
         drawnNumbers: [],
         currentNumber: null,
-        timeLeft: 5,
+        timeLeft: 3,
         isGameActive: false
     };
     io.emit('gameReset', gameState);
@@ -117,5 +117,5 @@ io.on('connection', (socket) => {
 
 const PORT = process.env.PORT || 3000;
 server.listen(PORT, () => {
-    console.log(`Servidor na porta ${PORT} - Sorteio a cada 5 segundos`);
+    console.log(`Servidor na porta ${PORT} - Sorteio a cada 3 segundos`);
 });
