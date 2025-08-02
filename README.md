@@ -9,11 +9,11 @@ Um jogo de bingo interativo com animações modernas, cronômetro e sorteio auto
 - 🎊 **Efeitos Especiais:** Confetes quando o jogo termina
 - 📱 **Totalmente Responsivo:** Funciona perfeitamente em mobile
 - 🔔 **Notificações:** Alertas visuais elegantes
-- ⏰ **Tempo Otimizado:** Sorteio a cada 3 segundos para mais dinamismo
+- ⏰ **Tempo Otimizado:** Sorteio a cada 5 segundos para mais dinamismo
 
 ## 🚀 Funcionalidades
 
-- ⏰ Cronômetro de 3 segundos entre sorteios
+- ⏰ Cronômetro de 5 segundos entre sorteios
 - 🎲 Sorteio automático de números de 1 a 75
 - 📊 Tabela visual dos números sorteados com animações
 - 🔄 Sistema de reset do jogo
@@ -60,7 +60,7 @@ Um jogo de bingo interativo com animações modernas, cronômetro e sorteio auto
 ## 🎮 Como Jogar
 
 1. Clique em **"🚀 Iniciar Jogo"** para começar
-2. A cada 3 segundos um novo número será sorteado automaticamente
+2. A cada 5 segundos um novo número será sorteado automaticamente
 3. Os números sorteados aparecerão destacados na tabela com animações
 4. O número atual fica piscando em vermelho com efeitos especiais
 5. A sequência de sorteio é mostrada na parte inferior com cores alternadas
@@ -101,7 +101,7 @@ AppAmazonQ/
 ## 🔧 Configuração
 
 - **Porta padrão:** 3000 (pode ser alterada via variável de ambiente PORT)
-- **Intervalo de sorteio:** 3 segundos
+- **Intervalo de sorteio:** 5 segundos
 - **Números disponíveis:** 1 a 75
 - **Animações:** CSS3 com hardware acceleration
 - **Fontes:** Google Fonts carregadas automaticamente
@@ -139,7 +139,7 @@ Conecte o repositório no Railway.app para deploy automático.
 
 ## 🎯 Melhorias Implementadas
 
-1. **Performance:** Tempo reduzido para 3 segundos
+1. **Performance:** Tempo ajustado para 5 segundos
 2. **UX/UI:** Design completamente renovado
 3. **Animações:** Efeitos visuais em todos os elementos
 4. **Feedback:** Notificações e efeitos sonoros (vibração)
